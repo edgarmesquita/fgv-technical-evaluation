@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Books>
+  <Book>
+    <Title>Java How to Program</Title>
+    <AuthorName><![CDATA[Deitel & Deitel]]></AuthorName>
+    <EditionYear>2007</EditionYear>
+  </Book>
+  <Book>
+    <Title>Patterns of Enterprise Application Architecture</Title>
+    <AuthorName><![CDATA[Martin Fowler]]></AuthorName>
+    <EditionYear>2002</EditionYear>
+  </Book>
+  <Book>
+    <Title>Head First Design Patterns</Title>
+    <AuthorName><![CDATA[Elisabeth Freeman]]></AuthorName>
+    <EditionYear>2004</EditionYear>
+  </Book>
+  <Book>
+    <Title><![CDATA[Internet & World Wide Web: How to Program]]></Title>
+    <AuthorName><![CDATA[Deitel & Deitel]]></AuthorName>
+    <EditionYear>2007</EditionYear>
+  </Book>
+</Books>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b4329d7f-1ad1-42fa-a816-21adcd976fa0"
+  name="Services" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="f00fc2f3-19df-4a76-ad7e-f384f43d2f68">
+      <profileInstance
+        Id="35061a9d-703a-4721-b8e1-656555ef7cfc"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d3fa0d85-4dc3-47dc-8475-3b6ccfe38b7d"
+        name="BooksOrderer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="48cc2414-0954-42cd-9ef2-419ea2b55104">
+            <interfaceMoniker
+              Id="d7f34bec-146c-4af1-8529-f925067f26e4"
+              LastKnownName="IBooksOrderer"
+              LastKnownLocation="Package_2231.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2686a312-7811-4aa0-bfc0-5be7f044701f"
+            name="Order"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b7eed773-9466-41b4-88ca-15a0e6aa0a6f"
+                  name="books"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d8dbefe3-8c6e-418c-b69d-ca3c95b78098"
+                      LastKnownName="Book[]"
+                      LastKnownLocation="Package_1826.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6a763b24-6a13-4de7-a711-39dd68531a33"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d8dbefe3-8c6e-418c-b69d-ca3c95b78098"
+                      LastKnownName="Book[]"
+                      LastKnownLocation="Package_1826.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

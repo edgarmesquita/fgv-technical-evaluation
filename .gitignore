@@ -1,0 +1,16 @@
+/Sources/Application/FGV.TechnicalEvaluation.Application/bin
+/Sources/Application/FGV.TechnicalEvaluation.Application/obj
+/Sources/Application/FGV.TechnicalEvaluation.WebApi/bin
+/Sources/Application/FGV.TechnicalEvaluation.WebApi/obj
+/Sources/Application/FGV.TechnicalEvaluation.WebApi.Client/bin
+/Sources/Application/FGV.TechnicalEvaluation.WebApi.Client/obj
+/Sources/Business/FGV.TechnicalEvaluation.Domain/bin
+/Sources/Business/FGV.TechnicalEvaluation.Domain/obj
+/Sources/Business/FGV.TechnicalEvaluation.Foundation/bin
+/Sources/Business/FGV.TechnicalEvaluation.Foundation/obj
+/Sources/Modeling/FGV.TechnicalEvaluation.Modeling/bin
+/Sources/Modeling/FGV.TechnicalEvaluation.Modeling/obj
+/Sources/Tests/FGV.TechnicalEvaluation.Integration.Tests/bin
+/Sources/Tests/FGV.TechnicalEvaluation.Integration.Tests/obj
+/Sources/Tests/FGV.TechnicalEvaluation.Tests/bin
+/Sources/Tests/FGV.TechnicalEvaluation.Tests/obj

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5cb6b6d7-15ea-4198-bb8e-71531d804f20"
+  name="Entities" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="ff7eb271-4d40-48e4-aa40-783fc38c81bc"
+        name="Book"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="da3d6da1-2cdd-4942-b9db-5f006ed98784"
+            name="Title"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a841cf67-d88d-484b-960f-7760b189ab11"
+                LastKnownName="string"
+                LastKnownLocation="Package_1825.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0673c45c-cb5c-4a24-baf0-695c45f9cad7"
+            name="AuthorName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a841cf67-d88d-484b-960f-7760b189ab11"
+                LastKnownName="string"
+                LastKnownLocation="Package_1825.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1ecccf82-9f46-4d12-92b4-47ee9be36f10"
+            name="EditionYear"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a8a8c86a-bf89-4566-8ce5-99f8b4918b7f"
+                LastKnownName="int"
+                LastKnownLocation="Package_1825.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a841cf67-d88d-484b-960f-7760b189ab11"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a8a8c86a-bf89-4566-8ce5-99f8b4918b7f"
+        name="int" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

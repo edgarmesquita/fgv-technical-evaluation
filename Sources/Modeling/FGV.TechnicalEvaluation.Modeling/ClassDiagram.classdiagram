@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="cbba213c-c38d-42f7-85f7-abac37965500" name="ClassDiagram" linkedPackageId="dd91c512-afde-48e7-99d1-a8051a376a91" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="38dc3b90-90fa-499f-b177-926e15e24e43" name="Foundation">
+        <elementDefinition Id="8be380bf-17cc-4083-ae17-09c6db95c5c6" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="12e81d58-a1f7-4660-be11-f3831b1d93c5" name="Entities">
+              <elementDefinition Id="5cb6b6d7-15ea-4198-bb8e-71531d804f20" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="d0ce634b-a9be-404b-8e86-22031c99c207" name="Book" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="ff7eb271-4d40-48e4-aa40-783fc38c81bc" />
+                    <ownedAttributesInternal>
+                      <property Id="4270c736-898f-47a0-b51e-ef8f48a015c2" name="Title" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="da3d6da1-2cdd-4942-b9db-5f006ed98784" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="60f0e62d-2419-403a-bcdd-7f75b2c63ba6" LastKnownName="string" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="4c167aba-494e-4442-892d-60baa93d09d3" name="AuthorName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="0673c45c-cb5c-4a24-baf0-695c45f9cad7" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="60f0e62d-2419-403a-bcdd-7f75b2c63ba6" LastKnownName="string" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="2354f14b-b3db-4051-880a-387d99afeeca" name="EditionYear" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="1ecccf82-9f46-4d12-92b4-47ee9be36f10" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="f8c285f4-75e8-42bc-a470-7f6f08630db4" LastKnownName="int" />
+                        </type_NamedElement>
+                      </property>
+                    </ownedAttributesInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="37caa080-7b74-47ad-a615-31fdca1b680b" name="Contracts">
+              <elementDefinition Id="cea9cb68-2244-40ea-b3f5-477d69dbb79c" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <package Id="22e751e7-02ef-4da8-bddc-3e57c7c34d5e" name="Services">
+                    <elementDefinition Id="dda18efe-11be-4d58-9f4a-a9ab2fdc4937" />
+                    <packagedElements>
+                      <packageHasNamedElement>
+                        <Interface Id="d633a593-5570-4d06-a828-90614b732827" name="IBooksOrderer" isAbstract="false" isLeaf="false">
+                          <elementDefinition Id="d7f34bec-146c-4af1-8529-f925067f26e4" />
+                          <ownedOperations>
+                            <operation Id="12941caa-31ef-498a-b23d-5ee89200d083" name="Order" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                              <elementDefinition Id="747391d6-16d4-4f3e-a671-b31d48008a9b" />
+                              <ownedParameters>
+                                <operationHasOwnedParameters>
+                                  <parameter Id="0021f2e1-2edd-4831-a615-41ed2a66e8e6" name="books" direction="In" isUnique="false">
+                                    <elementDefinition Id="8d14011e-d199-480b-9347-f1499e866f31" />
+                                    <type_NamedElement>
+                                      <referencedTypeMoniker Id="6fec400f-4f8d-48af-aec3-1f4084b2c657" LastKnownName="Book[]" />
+                                    </type_NamedElement>
+                                  </parameter>
+                                </operationHasOwnedParameters>
+                                <operationHasOwnedParameters>
+                                  <parameter Id="a39fc575-ba51-4cdf-8800-b260c89bd3ec" direction="Return" isUnique="false">
+                                    <elementDefinition Id="3046afa7-d733-4d27-a988-14b69e88ad28" />
+                                    <type_NamedElement>
+                                      <referencedTypeMoniker Id="6fec400f-4f8d-48af-aec3-1f4084b2c657" LastKnownName="Book[]" />
+                                    </type_NamedElement>
+                                  </parameter>
+                                </operationHasOwnedParameters>
+                              </ownedParameters>
+                            </operation>
+                          </ownedOperations>
+                        </Interface>
+                      </packageHasNamedElement>
+                    </packagedElements>
+                  </package>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="a66c34d8-a9e3-4e9c-a302-f70c77669763" name="IApplicationContext" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="69a14db1-a53a-4893-8c56-206cf207c535" />
+                    <ownedAttributes>
+                      <property Id="fd7812d8-7cd5-472e-9e49-ed68e62de3c7" name="BookOrdenation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="22819913-f591-4066-b985-6d0042c5c673" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="b8cfa23e-bdbd-4b98-907a-3fe07264e335" LastKnownName="ISorting[]" />
+                        </type_NamedElement>
+                      </property>
+                    </ownedAttributes>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="4c16ef16-2ad1-4c26-a5e3-52150052c6ff" name="ISorting" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="16808cef-208b-435a-8a70-8ff0520775fb" />
+                    <targetEnds>
+                      <association Id="b585a8df-0adf-4a8c-a6e1-4a9a0b66b8b2" isDerived="false" sourceEndRoleName="ISorting" targetEndRoleName="IApplicationContext" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="a66c34d8-a9e3-4e9c-a302-f70c77669763" LastKnownName="IApplicationContext" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="a20be20d-6ab0-4379-acff-7198dac32c42" name="ISorting" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <lowerValueInternal>
+                                <literalString Id="f36f2e74-606f-4094-bf2f-c10c3268bc29" name="Lower" value="*">
+                                  <elementDefinition Id="3ee1b8b9-a072-4416-8543-9dcb49a66751" />
+                                </literalString>
+                              </lowerValueInternal>
+                              <upperValueInternal>
+                                <literalString Id="0fe4dd4a-12c9-4b14-9720-ee9cb3cbe760" name="Upper" value="*">
+                                  <elementDefinition Id="4b3d3d7b-9a9c-4acb-a6fa-23559c4dcb9c" />
+                                </literalString>
+                              </upperValueInternal>
+                              <elementDefinition Id="6c6acc61-06d8-44c9-ae85-1fc187b7dc2f" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="22352ea9-62da-4370-8121-df08f918a400" name="IApplicationContext" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="1c9309d6-6883-4206-80db-7ee747915bee" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="ac1d8b6e-407b-4f9d-a9d4-a3ef8af7eb77" />
+                      </association>
+                    </targetEnds>
+                    <ownedAttributes>
+                      <property Id="3d10182e-1a41-45cf-899b-43a99f0db65f" name="ColumnName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="2f2acdb9-a4ce-432f-8261-6778b3e7fc79" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="60f0e62d-2419-403a-bcdd-7f75b2c63ba6" LastKnownName="string" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="c2756ad1-ccce-4e3c-b1b3-bfd4e4570669" name="Ascending" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="e7aea019-06e9-406a-86a1-7fe9c84dedbc" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="8e9d9311-6741-4ff1-96d8-a6f940dba08b" LastKnownName="bool" />
+                        </type_NamedElement>
+                      </property>
+                    </ownedAttributes>
+                  </Interface>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="459a5afd-718a-4d04-8ab3-067a9782776d" name="Domain">
+        <elementDefinition Id="4ff2d4d9-11a2-46fc-a8a7-7c2036728000" />
+        <suppliersInternal>
+          <dependency Id="0dd54279-e31e-4743-b4b8-d9544016f2bd">
+            <packageMoniker Id="38dc3b90-90fa-499f-b177-926e15e24e43" LastKnownName="Foundation" />
+            <elementDefinition Id="d7229706-fbfc-4dac-bfab-9cca3308035a" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="67f72b01-783a-42e3-ab09-44d8edeea82b" name="Services">
+              <elementDefinition Id="b4329d7f-1ad1-42fa-a816-21adcd976fa0" />
+              <profileInstances>
+                <packageHasProfileInstances Id="77b2ef27-d4dc-49e2-87e0-25333a416d31">
+                  <profileInstance Id="4d9c01af-1c91-43bc-a8e2-a50214b03048" name="TextTemplateBindings">
+                    <elementDefinition Id="35061a9d-703a-4721-b8e1-656555ef7cfc" />
+                  </profileInstance>
+                  <elementDefinition Id="f00fc2f3-19df-4a76-ad7e-f384f43d2f68" />
+                </packageHasProfileInstances>
+              </profileInstances>
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="270d8778-8181-48af-82cd-7fe32c8d8b0e" name="BooksOrderer" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="d3fa0d85-4dc3-47dc-8475-3b6ccfe38b7d" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="1d44a56b-de6c-4754-b212-a5253e0b7959">
+                        <interfaceMoniker Id="d633a593-5570-4d06-a828-90614b732827" LastKnownName="IBooksOrderer" />
+                        <elementDefinition Id="48cc2414-0954-42cd-9ef2-419ea2b55104" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="f7443d9f-fa10-49f2-9cd5-a3c43fa9f6fb" name="Order" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="2686a312-7811-4aa0-bfc0-5be7f044701f" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="22f93271-f903-4bab-ae80-176217577b1f" name="books" direction="In" isUnique="false">
+                              <elementDefinition Id="b7eed773-9466-41b4-88ca-15a0e6aa0a6f" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="6fec400f-4f8d-48af-aec3-1f4084b2c657" LastKnownName="Book[]" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="76b981ab-2dee-4da7-9b5c-24ef587c210f" direction="Return" isUnique="false">
+                              <elementDefinition Id="6a763b24-6a13-4de7-a711-39dd68531a33" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="6fec400f-4f8d-48af-aec3-1f4084b2c657" LastKnownName="Book[]" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="6fec400f-4f8d-48af-aec3-1f4084b2c657" name="Book[]" isAbstract="false" isLeaf="false" cachedFullName="Book[]">
+        <elementDefinition Id="d8dbefe3-8c6e-418c-b69d-ca3c95b78098" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="60f0e62d-2419-403a-bcdd-7f75b2c63ba6" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="a841cf67-d88d-484b-960f-7760b189ab11" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f8c285f4-75e8-42bc-a470-7f6f08630db4" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="a8a8c86a-bf89-4566-8ce5-99f8b4918b7f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8e9d9311-6741-4ff1-96d8-a6f940dba08b" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="8eda7838-f74f-4032-b728-6a28d748a269" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b8cfa23e-bdbd-4b98-907a-3fe07264e335" name="ISorting[]" isAbstract="false" isLeaf="false" cachedFullName="ISorting[]">
+        <elementDefinition Id="5e07205c-a9ef-48da-9d7e-70b52c83d4c1" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="dd91c512-afde-48e7-99d1-a8051a376a91" name="FGV.TechnicalEvaluation.Modeling">
+    <elementDefinition Id="7eba68da-2602-40b2-886a-2ff907987487" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ee67d597-df0f-4926-bccc-8b7164c36453">
+        <profileInstance Id="6796d92d-c73d-4064-9db4-1c78f8e75a5d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="cb2446b9-8c42-44ee-9e2c-4067c399d46a">
+        <profileInstance Id="c4da4873-cbdc-41c5-a114-3ee45c9fc7c7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

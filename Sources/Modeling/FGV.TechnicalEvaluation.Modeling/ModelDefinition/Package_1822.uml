@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4ff2d4d9-11a2-46fc-a8a7-7c2036728000"
+  name="Domain" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="d7229706-fbfc-4dac-bfab-9cca3308035a">
+      <packageMoniker
+        Id="8be380bf-17cc-4083-ae17-09c6db95c5c6"
+        LastKnownName="Foundation"
+        LastKnownLocation="Package_1821.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b4329d7f-1ad1-42fa-a816-21adcd976fa0"
+        LastKnownName="Services"
+        LastKnownLocation="Package_2224.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="fcbfdfef-d115-4ffc-a928-42efcddf6c0d"
+        LastKnownName="Exceptions"
+        LastKnownLocation="Package_2228.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
